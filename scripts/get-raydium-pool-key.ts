@@ -43,5 +43,7 @@ const ammConfigs = [
 	}, []);
 
 	console.log(`Pool keys of ${tokenA.toString()} and ${tokenB.toString()}`);
+
+	// @ts-expect-error
 	console.table(keys.map((k) => k.toString()));
 })();
